@@ -130,7 +130,7 @@ curl http://localhost:4000/v1/search?text=Paris
 Arrêter le proxy
 
 ```bash
-${GGOSERVICEPROXY_INSTALL_DIR}/ run_ggogeoservice_proxy.sh stop
+${GGOSERVICEPROXY_INSTALL_DIR}/run_ggogeoservice_proxy.sh stop
 ```
 
 Copier le fichier `ggogeoservice-1.0.0.jar` dans le répertoire
@@ -142,7 +142,7 @@ cp ./jar/ggogeoservice-1.0.0.jar ${GGOSERVICEPROXY_INSTALL_DIR}
 Relancer le proxy
 
 ```bash
-${GGOSERVICEPROXY_INSTALL_DIR}/ run_ggogeoservice_proxy.sh start
+${GGOSERVICEPROXY_INSTALL_DIR}/run_ggogeoservice_proxy.sh start
 ```
 
 Tester le fonctionnement du proxy
