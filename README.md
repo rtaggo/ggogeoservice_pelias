@@ -51,6 +51,12 @@ Les trois scripts shell de ce dépôt sont à exécuter dans l'ordre suivant
 1. `02_run_pelias.sh` : construire la solution Pelias
 1. `03_cleanup.sh` : nettoyer les fichiers temporaires
 
+Pensez à rendre ces scripts exécutables:
+
+```bash
+chmod 755 *.sh
+```
+
 ### Tester votre installation
 
 You can now make queries against your new Pelias build:
