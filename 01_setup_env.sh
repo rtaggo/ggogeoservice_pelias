@@ -1,6 +1,7 @@
 #!/bin/bash
 echo "Cloning Pelias Docker repository"
 # clone this repository
+rm -rf docker
 git clone https://github.com/pelias/docker.git && cd docker
 
 # install pelias script
