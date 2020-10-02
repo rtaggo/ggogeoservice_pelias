@@ -43,6 +43,22 @@ git clone https://github.com/rtaggo/ggogeoservice_pelias.git && cd ggogeoservice
 
 ```
 
+### Scripts de démarrage rapide
+
+Les trois scripts shell de ce dépôt sont à exécuter dans l'ordre suivant
+
+1. `01_setup_env.sh` : configurer l'envrionnement
+1. `02_run_pelias.sh` : construire la solution Pelias
+1. `03_cleanup.sh` : nettoyer les fichiers temporaires
+
+### Tester votre installation
+
+You can now make queries against your new Pelias build:
+
+```bash
+curl http://localhost:4000/v1/search?text=Paris
+```
+
 ## Installation du script utilitaire Pelias
 
 Le dépôt du projet Pelias utilise un script utilitaire afin de gérer plus facilement les différentes images Docker.
@@ -82,15 +98,15 @@ Si vous avez utilisé la commande `ln -s` ci-dessus, alors le répertoire `/usr/
 
 Si le chemin cible du lien symbolique n'est pas répertorié, alors vous devrez soit ajouter son emplacement à votre \$PATH, soit créer un nouveau lien symbolique qui pointe vers un emplacement qui est déjà sur votre \$PATH.
 
-## Script de démarrage rapide
+## en détails
 
-Le script shell suivant permet de rapidement mettre en place Pelias.
+Le script shell suivant permet de rapidement mettre en place Pelias (les commandes peuvent être exécutée une par une dans le terminal).
 
 ```bash
 #!/bin/bash
 set -x
 
-cd france
+cd ../france
 
 # create a directory to store Pelias data files
 # see: https://github.com/pelias/docker#variable-data_dir
