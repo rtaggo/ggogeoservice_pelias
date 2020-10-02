@@ -162,6 +162,8 @@ Tous les processus dans les conteneurs Pelias sont exécutés en tant qu'utilisa
 
 Cette variable peut être un UID ou une combinaison UID:GID telle que `1000:1000`. Pour plus d'informations, voir les documentations [docker-compose](https://docs.docker.com/compose/compose-file/#domainname-hostname-ipc-mac_address-privileged-read_only-shm_size-stdin_open-tty-user-working_dir) et [docker run](https://docs.docker.com/engine/reference/run/#user) sur le contrôle des utilisateurs des conteneurs Docker.
 
+Le fichier `.env` fournit est configuré avec la variable `DOCKER_USER` mise à `0` (donc root), il est préférable de la changer avec un autre utilisateur.
+
 ## Pelias CLI Commands
 
 Voici la liste des commandes du CLI Pelias disponibles.
