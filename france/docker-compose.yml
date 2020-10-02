@@ -100,7 +100,7 @@ services:
     ports: ["127.0.0.1:9200:9200", "127.0.0.1:9300:9300"]
     volumes:
       - "./elasticsearch.yml:/usr/share/elasticsearch/config/elasticsearch.yml:ro"
-      - "${DATA_DIR}/elasticsearch"
+      - "${DATA_DIR}/elasticsearch:/usr/share/elasticsearch/data"
     ulimits:
       memlock:
         soft: -1

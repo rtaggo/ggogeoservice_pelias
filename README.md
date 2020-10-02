@@ -133,7 +133,7 @@ Arrêter le proxy
 ${GGOSERVICEPROXY_INSTALL_DIR}/run_ggogeoservice_proxy.sh stop
 ```
 
-Copier le fichier `ggogeoservice-1.0.0.jar` dans le répertoire
+Copier le fichier `ggogeoservice-1.0.0.jar` dans le répertoire d'installation du proxy ggogeoservice
 
 ```bash
 cp ./jar/ggogeoservice-1.0.0.jar ${GGOSERVICEPROXY_INSTALL_DIR}
