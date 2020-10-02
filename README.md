@@ -14,9 +14,19 @@ Ce document présentation la mise en place du géocodeur <a href="https://github
 
 Ce dépôt est configuré pour télécharger/preparer/construire une solution complète de Pelias pour la France et les DOM/TOM.
 
-# :warning: Datasets without stable IDs
+# :warning: Photon préalablement installé
 
-Avant de démarrer
+Avant de continuer il est nécessaire d'arrêter le géocodeur Photon.
+
+```bash
+${PHOTON_INSTALL_DIR}/run_photon.sh stop
+```
+
+ou
+
+```bash
+${PHOTON_INSTALL_DIR}/run_photon_path.sh stop
+```
 
 # Pré-requis
 
@@ -113,6 +123,32 @@ You can now make queries against your new Pelias build:
 
 ```bash
 curl http://localhost:4000/v1/search?text=Paris
+```
+
+# Mise à jour du proxy ggogeoservice
+
+Arrêter le proxy
+
+```bash
+${GGOSERVICEPROXY_INSTALL_DIR}/ run_ggogeoservice_proxy.sh stop
+```
+
+Copier le fichier `ggogeoservice-1.0.0.jar` dans le répertoire
+
+```bash
+cp ./jar/ggogeoservice-1.0.0.jar ${GGOSERVICEPROXY_INSTALL_DIR}
+```
+
+Relancer le proxy
+
+```bash
+${GGOSERVICEPROXY_INSTALL_DIR}/ run_ggogeoservice_proxy.sh start
+```
+
+Tester le fonctionnement du proxy
+
+```bash
+${GGOSERVICEPROXY_INSTALL_DIR}/test_ggogeoservice_proxy.sh
 ```
 
 # Pour aller plus loin
