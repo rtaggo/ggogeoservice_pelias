@@ -11,7 +11,7 @@ ln -s "$(pwd)/pelias" /usr/local/bin/pelias
 
 echo "Moving to france/ directory"
 echo "current directory $(pwd)"
-cd  france
+cd  ../france
 echo "current directory $(pwd)"
 
 # create a directory to store Pelias data files
