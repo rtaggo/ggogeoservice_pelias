@@ -1,5 +1,4 @@
 #!/bin/bash
-set -x
 
 echo "Moving to france/ directory"
 cd france

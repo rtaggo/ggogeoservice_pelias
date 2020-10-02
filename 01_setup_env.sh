@@ -1,6 +1,4 @@
 #!/bin/bash
-set -x
-
 echo "Cloning Pelias Docker repository"
 # clone this repository
 git clone https://github.com/pelias/docker.git && cd docker
