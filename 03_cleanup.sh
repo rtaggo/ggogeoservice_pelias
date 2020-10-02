@@ -1,5 +1,5 @@
 #!/bin/bash
-echo "current directory ${pwd}"
+echo "Current directory $(pwd)"
 
 echo "Moving to france/ directory"
 cd france

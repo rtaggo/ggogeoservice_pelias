@@ -10,9 +10,9 @@ rm -rf /usr/local/bin/pelias
 ln -s "$(pwd)/pelias" /usr/local/bin/pelias
 
 echo "Moving to france/ directory"
-echo "current directory $(pwd)"
+echo "Current directory $(pwd)"
 cd  ../france
-echo "current directory $(pwd)"
+echo "Current directory $(pwd)"
 
 # create a directory to store Pelias data files
 # see: https://github.com/pelias/docker#variable-data_dir
