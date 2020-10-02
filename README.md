@@ -14,6 +14,10 @@ Ce document présentation la mise en place du géocodeur <a href="https://github
 
 Ce dépôt est configuré pour télécharger/preparer/construire une solution complète de Pelias pour la France et les DOM/TOM.
 
+# :warning: Datasets without stable IDs
+
+Avant de démarrer
+
 # Pré-requis
 
 Avant de continuer, il est nécessaire d'avoir installé sur le système:
